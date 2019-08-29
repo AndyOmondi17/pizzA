@@ -26,18 +26,22 @@
     </nav>
 
           <section id="section1">
-            <center>
-            <h1><span id="f_color">Yankees Pizza Place</span></h1>
-            <h2>Where taste meets the myth</h2>
-            <button type="button" class="btn btn-info">Make Your Order</button>
+            <div class="call_to_action">
+              <center>
+              <h1><span id="f_color">Yankees Pizza Place</span></h1>
+              <h2>Where taste meets the myth</h2>
+              <button type="button" class="btn btn-info" id="od">Make Your Order</button>
 
-            </center>
+              </center>
+            </div>
             <div class="container">
               <div class="row">
                 <div class="col-md-3">
 
-                  <form class="form_" action="index.html" method="post">
 
+
+                  <form class="form_" action="index.html" method="post">
+                    <h3>ORDER HERE</h3>
                     <select class="browser-default custom-select mb-4" searchable="Select here..">
                       <option value="" disabled selected>Select pizza size</option>
                       <option value="1">small</option>
@@ -63,9 +67,9 @@
                       <option value="3">Bacon</option>
                     </select>
                     Would you like your Pizza to be delivered?
-                    <input type="radio" name="delivery" value="yes">Yes<br>
-                    <input type="radio" name="delivery" value="no">No<br>
-                    <input type="text" name="" value="" placeholder="Enter your location" required>
+                    <input type="radio" id="YES" name="delivery" value="yes">Yes<br>
+                    <input type="radio" id="NO" name="delivery" value="no">No<br>
+                    <input type="text" name="" value="" placeholder="Enter your location" required id="location">
                     <br><br>
                     <input type="submit" name="" value="order" class="bt btn-primary">
 
