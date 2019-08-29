@@ -3,10 +3,13 @@
   width: 80px;
 }
 #section1{
-  padding: 120px;
-  height: 800px;
+  padding: 100px;
+  height: 650px;
   color: white;
   background: url(../images/mitchell-griest-ARBBUlj-6Es-unsplash.jpg)no-repeat;
   background-size: cover;
 
+}
+.form_{
+  display: none;
 }
