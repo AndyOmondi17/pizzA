@@ -2,3 +2,11 @@
   height:80px;
   width: 80px;
 }
+#section1{
+  padding: 120px;
+  height: 800px;
+  color: white;
+  background: url(../images/mitchell-griest-ARBBUlj-6Es-unsplash.jpg)no-repeat;
+  background-size: cover;
+
+}

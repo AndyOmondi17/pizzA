@@ -24,15 +24,63 @@
 
       </ul>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <section>
+
+          <section id="section1">
             <center>
-            <h1>Yankees Pizza Place</h1>
+            <h1><span id="f_color">Yankees Pizza Place</span></h1>
             <h2>Where taste meets the myth</h2>
-            <button type="button" class="btn btn-info">Order Now</button>
+            <button type="button" class="btn btn-info">Make Your Order</button>
+
             </center>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+
+                  <form class="form_" action="index.html" method="post">
+
+                    <select class="browser-default custom-select mb-4" searchable="Select here..">
+                      <option value="" disabled selected>Select pizza size</option>
+                      <option value="1">small</option>
+                      <option value="2">medium</option>
+                      <option value="3">Large</option>
+                    </select>
+                    <select class="browser-default custom-select mb-4" searchable="Select here..">
+                      <option value="" disabled selected>Choose crust</option>
+                      <option value="1">Crispy</option>
+                      <option value="2">Stuffed</option>
+                      <option value="3">Gluten-free</option>
+                    </select>
+                    <select class="browser-default custom-select mb-4" searchable="Select here..">
+                      <option value="" disabled selected>Choose toppings</option>
+                      <option value="1">Pepperoni</option>
+                      <option value="2">Mushroom</option>
+                      <option value="3">Bacon</option>
+                    </select>
+                    <select class="browser-default custom-select mb-4" searchable="Select here..">
+                      <option value="" disabled selected>Choose toppings</option>
+                      <option value="1">Pepperoni</option>
+                      <option value="2">Mushroom</option>
+                      <option value="3">Bacon</option>
+                    </select>
+                    Would you like your Pizza to be delivered?
+                    <input type="radio" name="delivery" value="yes">Yes<br>
+                    <input type="radio" name="delivery" value="no">No<br>
+                    <input type="text" name="" value="" placeholder="Enter your location" required>
+                    <br><br>
+                    <input type="submit" name="" value="order">
+
+                  </form>
+
+                </div>
+                <div class="col-md-6">
+
+                </div>
+
+              </div>
+
+            </div>
+
+
           </section>
 
 
@@ -41,11 +89,6 @@
 
 
 
-        </div>
-
-      </div>
-
-    </div>
 
   </body>
 </html>
