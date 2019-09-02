@@ -41,8 +41,9 @@ $(document).ready(function(event){
       sizePrice=700;
       break;
       default:
-      sizePrice=0;
+      console.log("No selected item");
     }
+    alert(sizePrice);
     var crust=$("#crust").val();
     var crustPrice;
     switch (crust){
@@ -56,18 +57,30 @@ $(document).ready(function(event){
       crustPrice=300;
       break;
       default:
-      crustPrice=0;
+      console.log("No selected item");
     }
-    var toppings=$().val();
-    var delivery=$("input[name=delivery:checked]").val();
+    //alert(crustPrice);
+
+
+
+    var delivery=$(".radioButton").val();
     var deliveryPrice;
-    if(deliver == "yes"){
+
+    switch (delivery) {
+      case "yes":
       deliveryPrice=150;
-    }else {
+      break;
+      case "no":
       deliveryPrice=0;
+      break;
+      default:
+      console.log("No selected item");
     }
+
+    alert("Delivery price is "+deliveryPrice);
     var totalPrice=crustPrice+deliveryPrice+sizePrice;
-    alert("Your total price is"+totalPrice);
+    alert("Your total Price is "+totalPrice);
+    /*  var toppings=$().val();*/
 
   });
 });
