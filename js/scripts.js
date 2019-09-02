@@ -28,6 +28,8 @@ $(document).ready(function(event){
 
 $(document).ready(function(event){
   $(".form_").submit(function() {
+    //selected Pizza Size Section
+    event.preventDefault()
     var pizzaSize=$("#size").val();
     var sizePrice;
     switch (pizzaSize) {
@@ -44,6 +46,7 @@ $(document).ready(function(event){
       console.log("No selected item");
     }
     alert(sizePrice);
+    //selected crustPrices
     var crust=$("#crust").val();
     var crustPrice;
     switch (crust){
@@ -60,9 +63,7 @@ $(document).ready(function(event){
       console.log("No selected item");
     }
     //alert(crustPrice);
-
-
-
+    //DeliveryPrice option
     var delivery=$(".radioButton").val();
     var deliveryPrice;
 
@@ -76,11 +77,40 @@ $(document).ready(function(event){
       default:
       console.log("No selected item");
     }
+  /*  var toppings=[];
+    $.each($("input[name='Toppings']:checked"))
+    toppings.push($(this).val());
+    alert("Selected toppings are "+toppings.join(", "));*/
+    var toppings = [];
+    $.each($("input[name='Toppings']:checked"), function(){
+      toppings. push($(this). val());
+    });
+    var pepperoniPrice=0;
+    var mushroomPrice=0;
+    var baconPrice=0;
+    var toppingPrice=0;
+    switch (toppings) {
+      case toppings[0]:
+      pepperoniPrice=100;
+        break;
+      case toppings[1]:
+      mushroomPrice=200;
+        break;
+      case toppings[2]:
+      baconPrice=150;
+      break;
+      default:
+      console.log("No selected item");
+    }
+    toppingPrice=pepperoniPrice+mushroomPrice+baconPrice;
+    alert("Your total topping price is "+toppingPrice);
 
-    alert("Delivery price is "+deliveryPrice);
+    alert("Toppings selected are "+toppings.join(" ,"));
+    var sum=0;
+
     var totalPrice=crustPrice+deliveryPrice+sizePrice;
-    alert("Your total Price is "+totalPrice);
-    /*  var toppings=$().val();*/
+
+
 
   });
 });
