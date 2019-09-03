@@ -3,7 +3,7 @@
   this.crust=crust;
 
   this.delivery=deliver;
-}
+}*/
 
 var pizzaSize=$("#size").val();
 var sizePrice;
@@ -20,7 +20,7 @@ switch (pizzaSize) {
   default:
   sizePrice=0;
 }
-alert(sizePrice);
+alert(sizePrice);*/
 
 //selected crustPrices
 var crust=$("#crust").val();
@@ -54,15 +54,15 @@ switch (delivery) {
   default:
   deliveryPrice=0;
 }
-alert(deliveryPrice);*/
-  /*var toppings=[];
+alert(deliveryPrice);
+  var toppings=[];
 $.each($("input[name='Toppings']:checked"))
 toppings.push($(this).val());
 alert("Selected toppings are "+toppings.join(", "));*/
-/*var toppings = [];
+var toppings = [];
 $.each($("input[name='Toppings']:checked"), function(){
   toppings. push($(this). val());
-});*/
+});
 var pepperoniPrice=0;
 var mushroomPrice=0;
 var baconPrice=0;
