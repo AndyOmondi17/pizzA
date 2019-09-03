@@ -8,34 +8,7 @@ function PizzaOrder(pizzaSize,crust,toppingPrice,delivery){
 }
 
 
-$(document).ready(function(event){
-  $("#od").click(function(){
 
-    $(".form_").show();
-
-    $("input[name=delivery]").click(function(){
-      var deliver=$("input[name=delivery]:checked").val();
-
-      if(deliver == "yes"){
-        $("input[id=location]").show();
-        $("#second_button").click(function(){
-          var location =$("#location").val();
-            alert("Your food will be delivered at " + location );
-
-        });
-
-
-      }else if (deliver == "no") {
-        $("input[id=location]").hide();
-      }
-      $(".second_button").click(function(event){
-          event.preventDefault();
-          $(".response").show();
-      });
-
-    });
-});
-});
 
 
 /*Business logic*/
@@ -129,8 +102,37 @@ $(document).ready(function(){
     };
 
     var totalPrice=crustPrice+deliveryPrice+sizePrice;
+    alert("Your total price is "+totalPrice);
 
 
 
   });
+});
+$(document).ready(function(event){
+  $("#od").click(function(){
+
+    $(".form_").show();
+
+    $("input[name=delivery]").click(function(){
+      var deliver=$("input[name=delivery]:checked").val();
+
+      if(deliver == "yes"){
+        $("input[id=location]").show();
+        $("#second_button").click(function(){
+          var location =$("#location").val();
+            alert("Your food will be delivered at " + location + "at a cost of "+deliveryPrice );
+
+        });
+
+
+      }else if (deliver == "no") {
+        $("input[id=location]").hide();
+      }
+      $(".second_button").click(function(event){
+          event.preventDefault();
+          $(".response").show();
+      });
+
+    });
+});
 });
