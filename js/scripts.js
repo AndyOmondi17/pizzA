@@ -318,7 +318,7 @@ $("form_").submit(function(event){
 
 	//Subtract from final price
 	finalPrice = pizzaPrice - toppingPrice;
-	//$("#final-price").text("$" + finalPrice);
+	$("#final-price").text("$" + finalPrice);
 	console.log(finalPrice);
   $("#mezesha").append("<tr><td#TOPPING>"+toppingPrice+"</td><tr>");
 	}
