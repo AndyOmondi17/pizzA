@@ -190,7 +190,13 @@ $("form_").submit(function(event){
   event.preventDefault();
 
 	var y = $("#size option:selected").val();
-  
+  if(y=="1"){
+    pizzaPrice = pricePizza.small;
+  	let displaySizePrice = "ksh" + pizzaPrice;
+  	let displayFinalPrice = "ksh" + pizzaPrice;
+    alert(pizzaPrice);
+  	console.log(pizzaPrice);
+    $("#mezesha").append("<tr><td#pizzaSIZE>"+ displaySizePrice + "</td></tr>");
   }else if(y=="2"){
     pizzaPrice = pricePizza.medium;
   	let displaySizePrice = "$" + pizzaPrice;
