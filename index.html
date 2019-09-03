@@ -33,6 +33,7 @@
               <button type="button" class="btn btn-info" id="od">Make Your Order</button>
 
               </center>
+              <br>
             </div>
             <div class="container">
               <div class="row">
@@ -44,9 +45,9 @@
                     <h3>ORDER HERE</h3>
                     <select class="browser-default custom-select mb-4" searchable="Select here.." id="size">
                       <option value="" disabled selected>Select pizza size</option>
-                      <option value="1">small</option>
-                      <option value="2">medium</option>
-                      <option value="3">Large</option>
+                      <option  value="1">small-500</option>
+                      <option  value="2">medium-650</option>
+                      <option  value="3">Large-700</option>
                     </select>
                     <select class="browser-default custom-select mb-4" searchable="Select here.." id="crust">
                       <option value="" disabled selected>Choose crust</option>
@@ -55,9 +56,9 @@
                       <option value="3">Gluten-free</option>
                     </select>
                     Toppings:<br>
-                    <input type="checkbox" name="Toppings" value="Peppereoni">Pepperoni<br>
-                    <input type="checkbox" name="Toppings" value="Mushroom">Mushroom<br>
-                    <input type="checkbox" name="Toppings" value="Bacon">Bacon
+                    <input type="checkbox" name="Toppings" value="Peppereoni" class="tp">Pepperoni<br>
+                    <input type="checkbox" name="Toppings" value="Mushroom" class="tp">Mushroom<br>
+                    <input type="checkbox" name="Toppings" value="Bacon" class="tp">Bacon
                     <br>
                     Would you like your Pizza to be delivered?
                     <input type="radio" class="radioButton" name="delivery" value="yes">Yes<br>
@@ -69,13 +70,32 @@
                   </form>
 
                 </div>
+                <div class="col-md-3">
+
+                </div>
                 <div class="col-md-6">
                   <div class="response">
-                    <ul class="pizzaDetails">
-                        <p>PizzaSize:</p>
-                        <p>Crust:</p>
-                        <p>Topping:</p>
-                    </ul>
+                    <div class="card">
+                      <div class="card-body">
+                        <table id="mezesha">
+                          <tr>
+                            <th>Pizza Size</th>
+                            <th>Crust</th>
+                            <th>Topping</th>
+                            <th>Delivery</th>
+                            <th>Total Price</th>
+                          </tr>
+                          <tr>
+                            <td id="pizzaSIZE"></td>
+                            <td id="CRUST"></td>
+                            <td id="TOPPING"></td>
+                            <td id="DELIVERY"></td>
+                            <td id="TOTALPRICE"></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+
 
                   </div>
 
