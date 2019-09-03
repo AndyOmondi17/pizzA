@@ -50,10 +50,10 @@ $(document).ready(function(){
     var sizePrice;
     switch (pizzaSize) {
       case "1":
-      sizePrice=340;
+      sizePrice=500;
       break;
       case "2":
-      sizePrice=500;
+      sizePrice=650;
       break;
       case "3":
       sizePrice=700;
@@ -61,7 +61,7 @@ $(document).ready(function(){
       default:
       console.log("No selected item");
     }
-    alert(sizePrice);
+    alert("Your pizza price is"+sizePrice);
     //selected crustPrices
     var crust=$("#crust").val();
     var crustPrice;
@@ -70,14 +70,15 @@ $(document).ready(function(){
       crustPrice=100;
       break;
       case "2":
-      crustPrice=200;
+      crustPrice=100;
       break;
       case "3":
-      crustPrice=300;
+      crustPrice=100;
       break;
       default:
       console.log("No selected item");
     }
+    alert("Crust price is "+crustPrice);
     //alert(crustPrice);
     //DeliveryPrice option
     var delivery=$(".radioButton").val();
