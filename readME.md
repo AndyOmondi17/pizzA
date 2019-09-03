@@ -21,4 +21,4 @@ Behavior	input	output
 user inputs ordering details and destination intended then hits submit	once the information is input the application should be able to calculate the total price.
 License
 Determine the license under which this application can be used. See below for more details on licensing. Copyright (c) 2019
-{MIT License}
+s{MIT License}
