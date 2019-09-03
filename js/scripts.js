@@ -54,15 +54,15 @@ switch (delivery) {
   default:
   deliveryPrice=0;
 }
-alert(deliveryPrice);
-/*  var toppings=[];
+alert(deliveryPrice);*/
+  /*var toppings=[];
 $.each($("input[name='Toppings']:checked"))
 toppings.push($(this).val());
 alert("Selected toppings are "+toppings.join(", "));*/
 /*var toppings = [];
 $.each($("input[name='Toppings']:checked"), function(){
   toppings. push($(this). val());
-});
+});*/
 var pepperoniPrice=0;
 var mushroomPrice=0;
 var baconPrice=0;
@@ -84,7 +84,7 @@ toppingPrice=pepperoniPrice+mushroomPrice+baconPrice;
 alert("Your total topping price is "+toppingPrice);
 
 alert("Toppings selected are "+toppings.join(" ,"));
-var sum=0;*/
+var sum=0;
 
 /*PizzaOrder.prototype.totalPrice = function (){
   return crustPrice+deliveryPrice+sizePrice;
